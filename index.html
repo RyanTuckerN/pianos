@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pianos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 2rem;
+      text-align: center;
+      margin: 0;
+      padding: 20px 0;
+    }
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .carousel {
+      width: 400vw;
+      overflow: hidden;
+      position: relative;
+    }
+    .review {
+      width: calc((1 / 4) * 100%);
+      height: fit-content;
+      text-align: center;
+      margin: auto;
+      font-family: "Poppins", sans-serif;
+      animation: slide 30s infinite;
+    }
+    .reviewer {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: right;
+      font-family: "Montserrat", sans-serif;
+    }
+    .review-inner {
+      padding: 20px;
+      max-width: 500px;
+      margin: auto; /* adjust this if you dont want to center vertically */
+    }
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(0);
+      }
+      /* adjust the percentages to shorten/lengthen animation */
+      33% {
+        transform: translateX(-100%);
+      }
+      58% {
+        transform: translateX(-100%);
+      }
+      /* adjust the percentages to shorten/lengthen animation */
+      66% {
+        transform: translateX(-200%);
+      }
+      91% {
+        transform: translateX(-200%);
+      }
+      /* adjust the percentages to shorten/lengthen animation */
+      100% {
+        transform: translateX(-300%);
+      }
+    }
+  </style>
+  <body>
+    <section id="scrolling_reviews">
+      <h1>Testimonials</h1>
+      <div class="flex carousel">
+        <div id="review-one" class="review">
+          <div class="review-inner">
+            I had an absolutely wonderful experience buying my instrument at
+            Prosper Pianos. Isaac is immensely knowledgeable about the
+            instruments that he curates and meticulously cares for, and is very
+            transparent about the condition and history of each piano that comes
+            through his lovely, airy loft space. Every visit was a delight, and
+            I felt truly heard and valued as a customer and fellow artist....He
+            also takes care of the moving process with a trusted team of movers,
+            which is a huge weight lifted (literally) within the delicate
+            process of investing in a piano—as well as setting me up with a
+            comfortable payment plan. Overall, a perfect piano buying
+            experience. I cannot recommend Prosper Pianos enough....11/10.
+            <div class="reviewer">- Sam Behr</div>
+          </div>
+        </div>
+        <div id="review-two" class="review">
+          <div class="review-inner">
+            Isaac is more than a piano salesman, restoration artist and tuner.
+            He sees the soul of an instrument and channels that ability into the
+            masterful work that he does at Prosper. Owning my first piano was a
+            major milestone in my life and I am grateful it was Isaac who
+            brought it to me.
+            <div class="reviewer">- Dan Saks</div>
+          </div>
+        </div>
+        <div id="review-three" class="review">
+          <div class="review-inner">
+            Isaac is much more than a salesman. He is a craftsman and a
+            connoisseur whose handiwork has transformed our home. You would be
+            privileged to be invited into his workshop where he refurbishes
+            150-year old pianos. You’d be rewarded for life to take one home.
+            <div class="reviewer">- Sam Brand</div>
+          </div>
+        </div>
+        <div id="review-one" class="review">
+          <div class="review-inner">
+            I had an absolutely wonderful experience buying my instrument at
+            Prosper Pianos. Isaac is immensely knowledgeable about the
+            instruments that he curates and meticulously cares for, and is very
+            transparent about the condition and history of each piano that comes
+            through his lovely, airy loft space. Every visit was a delight, and
+            I felt truly heard and valued as a customer and fellow artist....He
+            also takes care of the moving process with a trusted team of movers,
+            which is a huge weight lifted (literally) within the delicate
+            process of investing in a piano—as well as setting me up with a
+            comfortable payment plan. Overall, a perfect piano buying
+            experience. I cannot recommend Prosper Pianos enough....11/10.
+            <div class="reviewer">- Sam Behr</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
